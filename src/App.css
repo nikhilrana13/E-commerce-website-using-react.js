@@ -1,0 +1,152 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#root{
+  width:100%;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+  
+
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+  
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .autoplay-progress {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    z-index: 10;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: var(--swiper-theme-color);
+  }
+  
+  .autoplay-progress svg {
+    --progress: 0;
+    position: absolute;
+    left: 0;
+    top: 0px;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    stroke-width: 4px;
+    stroke: var(--swiper-theme-color);
+    fill: none;
+    stroke-dashoffset: calc(125.6px * (1 - var(--progress)));
+    stroke-dasharray: 125.6;
+    transform: rotate(-90deg);
+  }
+  
+
+
+@media (max-width: 700px) {
+  .placed-order{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+    gap:15px;
+
+  }
+
+  .placed-order h1{
+    font-size: 1.5rem;
+  }
+   .Footer{
+    padding:0px;
+    margin:0px;
+   }
+
+  .card-product{
+    width:200px;
+    /* border:1px solid red */
+  }
+  
+  .empty-card a{
+    font-size:0.75rem;
+
+  }
+  .prohead{
+    font-size:2rem
+  }
+  .category{
+    display:flex;
+    align-items:center;
+    gap:0;
+    padding:0;
+    /* border:1px solid red */
+
+  }
+  .category a{
+    font-size:.75rem
+  }
+
+
+  .nav{
+    padding-left:10px;
+    padding-right:10px;
+    border:1px solid red
+  }
+  .nav-links {
+    display: none;
+    flex-direction: column; 
+    position: absolute; 
+    background-color: white; 
+    width: 100%; 
+    top: 100%; 
+    left: 0; 
+    padding: 1rem; 
+  }
+  
+  .nav-links.show {
+    display: flex; 
+  }
+  
+  .toggle {
+    display: block; 
+  }
+  
+  .toggle.hidden {
+    display: none;
+  }
+
+  .swiper-container {
+    position:sticky;
+    z-index: -1; 
+  }
+}
+
+@media (min-width: 801px) {
+  .nav-links {
+    display: flex; 
+  }
+
+  .toggle {
+    display: none; 
+  }
+}
+
