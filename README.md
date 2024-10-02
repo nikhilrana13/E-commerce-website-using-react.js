@@ -30,3 +30,5 @@ Swiper.js: For implementing a responsive product slider.
 Tailwind CSS: For responsive and mobile-first design, ensuring the app looks great on all screen sizes.
 
 CSS: For additional custom styling and UI enhancements.
+
+live website : https://e-commerce-website-using-react-gni7zjscl.vercel.app/
