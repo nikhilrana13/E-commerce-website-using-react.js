@@ -15,10 +15,7 @@ function App() {
   const {category} = useParams();
 
 
-//  const isActive = (element) =>{
-//   return element?.isActive ? 'text-blue-600' : '' 
-//  }
-     
+
 
  useEffect(()=>{
   filterproducts(category)
