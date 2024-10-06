@@ -27,11 +27,11 @@ function Cart() {
     <div className='flex flex-col  mt-4'>
       {
         cart.length > 0?
-        <div className='flex flex-col p-5 gap-10'>
+        <div className=' flex flex-col p-5 gap-10'>
           {
             cart.map((product)=>{
               return(
-                <div key={product.id} className='shadow-md p-4 flex items-center gap-10  justify-center  '>
+                <div key={product.id} className='shadow-md p-4 flex items-center gap-10  justify-center cart-product  '>
                    <img src={product.image} alt={product.name} className='w-[120px] h-[80px] object-contain ' />
                    <div>
                    <div className=' flex flex-col gap-2   w-[450px] p-5 card-product '>

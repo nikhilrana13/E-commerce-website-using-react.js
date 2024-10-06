@@ -31,10 +31,10 @@ function App() {
         <Navbar />
         
         <Slider />
-      <div className='w-[80%] m-auto my-4 bg-white-100 items-center flex flex-col gap-5   p-4'>
+      <div className='products-box w-[80%] m-auto my-4 bg-white-100 items-center flex flex-col gap-5   p-4'>
         <NavLink to='/'className='text-[3rem] font-bold text-center  p-4 prohead'>Products</NavLink>
-        <div className='categories flex flex-col '>
-          <ul className='flex items-center justify-center gap-10 p-8 category '>
+        <div className=' w-[100%] px-[2rem] categories flex flex-col p-3 '>
+          <ul className=' w-[100%] flex items-center justify-center gap-10 p-8 category '>
             {
               products_categories.map((category)=>{
                 return(
